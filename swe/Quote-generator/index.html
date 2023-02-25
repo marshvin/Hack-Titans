@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1 class="title">Random Quote Generator</h1>
+    <div class="container">
+      <div class="options">
+        <label for="num-quotes">Number of quotes (1-5): </label>
+        <input type="number" id="num-quotes" min="1" max="5" value="1"><br>
+        <label for="type-quotes">Type of quotes:</label>
+        <select id="type-quotes">
+          <option value="life">Life</option>
+          <option value="success">Success</option>
+        </select>
+      </div>
+      <button id="generate-btn">Generate Quotes</button>
+      <div class="output">
+        <h2>Generated Quotes:</h2>
+        <ul id="quote-list"></ul>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
